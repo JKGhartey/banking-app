@@ -1,8 +1,8 @@
 ---
 
-# FinVista: A Modern Fintech Banking Application
+# Cascade: A Modern Fintech Banking Application
 
-FinVista is a comprehensive financial platform designed to help users manage their finances effortlessly. With FinVista, users can connect multiple bank accounts, view real-time transaction updates, transfer money within the platform, and monitor their financial health with ease. Built using Next.js, FinVista offers a robust and user-friendly experience tailored to meet the needs of modern users.
+Cascade is a comprehensive financial platform designed to help users manage their finances effortlessly. With Cascade, users can connect multiple bank accounts, view real-time transaction updates, transfer money within the platform, and monitor their financial health with ease. Built using Next.js, Cascade offers a robust and user-friendly experience tailored to meet the needs of modern users.
 
 📋 **Contents**
 
@@ -26,7 +26,7 @@ FinVista is a comprehensive financial platform designed to help users manage the
 
 ### 🤖 Overview
 
-FinVista is a financial SaaS platform created with Next.js. It allows users to connect multiple bank accounts, view real-time transaction updates, transfer money to other platform users, and manage their finances all in one place.
+Cascade is a financial SaaS platform created with Next.js. It allows users to connect multiple bank accounts, view real-time transaction updates, transfer money to other platform users, and manage their finances all in one place.
 
 For support and community discussions, join our active Discord community of over 34k+ members.
 
@@ -96,7 +96,7 @@ Ensure you have the following installed:
 
 ```sh
 
-git clone https://github.com/adrianhajdin/banking.git
+git clone https://github.com/jkghartey/banking-app.git
 
 cd banking
 
@@ -171,4 +171,3 @@ npm run dev
 ```
 
 Visit [http://localhost:3000](http://localhost:3000) in your browser to see the project in action.
-
