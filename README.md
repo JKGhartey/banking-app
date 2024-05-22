@@ -1,36 +1,174 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+---
 
-## Getting Started
+# FinVista: A Modern Fintech Banking Application
 
-First, run the development server:
+FinVista is a comprehensive financial platform designed to help users manage their finances effortlessly. With FinVista, users can connect multiple bank accounts, view real-time transaction updates, transfer money within the platform, and monitor their financial health with ease. Built using Next.js, FinVista offers a robust and user-friendly experience tailored to meet the needs of modern users.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+📋 **Contents**
+
+- 🤖 [Overview](#overview)
+
+- ⚙️ [Technology Stack](#technology-stack)
+
+- 🔋 [Core Features](#core-features)
+
+- 🤸 [Getting Started](#getting-started)
+
+- 🕸️ [Code Samples](#code-samples)
+
+- 🔗 [Resources](#resources)
+
+- 🚀 [Additional Information](#additional-information)
+
+- 🚨 [Video Tutorial](#video-tutorial)
+
+---
+
+### 🤖 Overview
+
+FinVista is a financial SaaS platform created with Next.js. It allows users to connect multiple bank accounts, view real-time transaction updates, transfer money to other platform users, and manage their finances all in one place.
+
+For support and community discussions, join our active Discord community of over 34k+ members.
+
+---
+
+### ⚙️ Technology Stack
+
+- **Next.js**
+
+- **TypeScript**
+
+- **Appwrite**
+
+- **Plaid**
+
+- **Dwolla**
+
+- **React Hook Form**
+
+- **Zod**
+
+- **TailwindCSS**
+
+- **Chart.js**
+
+- **ShadCN**
+
+---
+
+### 🔋 Core Features
+
+- **Secure Authentication:** Implement server-side rendering (SSR) with thorough validation and authorization mechanisms.
+
+- **Bank Account Integration:** Use Plaid to link multiple bank accounts.
+
+- **Dashboard Overview:** Display a comprehensive overview of the user's financial status, including balances, recent transactions, and spending categories.
+
+- **Bank Management:** List all connected banks along with account details and balances.
+
+- **Transaction Records:** Provide pagination and filtering for viewing transaction history.
+
+- **Live Updates:** Automatically update relevant sections when new bank accounts are connected.
+
+- **Funds Transfer:** Facilitate money transfers via Dwolla to other accounts, requiring necessary fields and recipient bank IDs.
+
+- **Responsive Design:** Ensure the app works smoothly across various devices, including desktops, tablets, and smartphones.
+
+These features, along with a focus on code structure and reusability, make this app robust and user-friendly.
+
+---
+
+### 🤸 Getting Started
+
+Set up the project locally by following these steps.
+
+**Prerequisites**
+
+Ensure you have the following installed:
+
+- Git
+
+- Node.js
+
+- npm (Node Package Manager)
+
+**Clone the Repository**
+
+```sh
+
+git clone https://github.com/adrianhajdin/banking.git
+
+cd banking
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Install Dependencies**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+npm install
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+**Configure Environment Variables**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a `.env` file in the project root and add your credentials:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```sh
 
-## Deploy on Vercel
+#NEXT
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+NEXT_PUBLIC_SITE_URL=
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#APPWRITE
+
+NEXT_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+
+NEXT_PUBLIC_APPWRITE_PROJECT=
+
+APPWRITE_DATABASE_ID=
+
+APPWRITE_USER_COLLECTION_ID=
+
+APPWRITE_BANK_COLLECTION_ID=
+
+APPWRITE_TRANSACTION_COLLECTION_ID=
+
+APPWRITE_SECRET=
+
+#PLAID
+
+PLAID_CLIENT_ID=
+
+PLAID_SECRET=
+
+PLAID_ENV=
+
+PLAID_PRODUCTS=
+
+PLAID_COUNTRY_CODES=
+
+#DWOLLA
+
+DWOLLA_KEY=
+
+DWOLLA_SECRET=
+
+DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
+
+DWOLLA_ENV=sandbox
+
+```
+
+Fill in the placeholders with your actual account credentials, which you can obtain from Appwrite, Plaid, and Dwolla.
+
+**Run the Project**
+
+```sh
+
+npm run dev
+
+```
+
+Visit [http://localhost:3000](http://localhost:3000) in your browser to see the project in action.
+
